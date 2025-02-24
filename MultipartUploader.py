@@ -1,3 +1,21 @@
+"""
+AWS S3 Optimized Multipart Uploader
+----------------------------------
+
+A high-performance tool for uploading large files to Amazon S3 using multipart uploads
+with automatic chunk size optimization and resume capability.
+
+Author: Cristian Bustamante R.
+Created: 2024-10-24
+Version: 1.0
+
+Features:
+- Automatic chunk size optimization based on file size
+- Parallel upload with configurable number of workers
+- Resume capability for interrupted uploads
+- Accurate progress tracking and speed calculation
+- Robust error handling and retry logic
+"""
 import argparse
 import boto3
 import math
